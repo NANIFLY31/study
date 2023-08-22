@@ -206,7 +206,7 @@ li:active{
     /* margin-left: 150vh; */
     text-align: center;
     position: relative;
-    top: 0vh;
+    top: -100vh;
     left: 90vh;
 }
 #display ul{
