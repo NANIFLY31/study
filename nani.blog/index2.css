@@ -29,7 +29,7 @@ nav{
 #navicons{
     /* border: 2px solid red; */
     position: fixed;
-    left: 138vh;
+    right: 7vh;
     display: inline-flex;
     float: right;
     /* height: 5vh; */
