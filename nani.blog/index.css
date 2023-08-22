@@ -73,11 +73,11 @@ body::-webkit-scrollbar{
     height: 30px;   
 }
 .subjectline{
-    /* position: fixed; */
+    position: relative;
     margin-left: 20px;
     width: 63.3%;
     /* -webkit-margin-start: 40px; */
-    -ms-margin-left: 90vh; 
+    /*-ms-margin-left: 90vh;  */
 
 }
 
@@ -247,8 +247,8 @@ li:active{
 #others{
     /* display: flex; */
     gap: 11vh;
-    position: relative;
-    top: -91.8vh;
+    position: absolute;
+    top: 20vh;
     width: 100vh;
     /* border: 2px solid red; */
     display: none;
