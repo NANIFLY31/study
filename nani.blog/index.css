@@ -182,7 +182,6 @@ li:active{
     /* transition: 0.5s; */
     font-size: large;
     letter-spacing: 2px;
-    position: relative;
 }
 .unitlistactive{
     box-shadow: 0px 0px 10px 1px #fff;
@@ -206,7 +205,7 @@ li:active{
     /* margin-left: 150vh; */
     text-align: center;
     position: relative;
-    top: -100vh;
+    top: 10vh;
     left: 90vh;
 }
 #display ul{
