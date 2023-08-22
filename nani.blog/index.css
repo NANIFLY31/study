@@ -206,7 +206,7 @@ li:active{
     /* margin-left: 150vh; */
     text-align: center;
     position: fixed;
-    top: 35vh;
+/*     top: 35vh; */
     left: 155vh;
 }
 #display ul{
