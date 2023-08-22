@@ -31,12 +31,12 @@ body::-webkit-scrollbar{
     top: 15vh;
     /* margin-top: 15vh; */
     margin-left: 7vh;
-    /* margin-right: 7vh; */
+    margin-right: 7vh;
     border-radius: 10px;
     background-color: rgba(0,0,0,0.3);
     /* border: 2px solid red; */
     height: 81vh;
-    width: 203vh;
+/*     width: 203vh; */
 }
 .subjectlist{
     /* border: 2px solid red; */
