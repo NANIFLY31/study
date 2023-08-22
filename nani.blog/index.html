@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <script src="https://kit.fontawesome.com/9b3e996841.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img id="screen"  src="bg.jpg" alt=""> -->
+    <nav>
+        <h2 class="logo"><span class="n">N</span>T</h2>
+        <div class="sidebar">
+            <div class="logo-details">
+                <a id="menu" class="naviconslist"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+        <div id="navicons">
+            <div class="inputhide">
+                <a id="search" class="naviconslistt" name="true" onclick="searh()"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input type="search" id="inputbar" placeholder="search" spellcheck="false">
+            </div>
+            <a id="user" class="naviconslist"><i class="fa-solid fa-user"></i><span class="tooltipsearch">search</span></a>
+            <a id="user" class="naviconslist"><i class="fas fa-envelope"></i><span class="tooltipsearch">search</span></a>
+            <a id="user" class="naviconslist"><i class="far fa-hashtag"></i><span class="tooltipsearch">search</span></a>
+            <a id="user" class="naviconslist"><i class="far fa-circle-question"></i><span class="tooltipsearch">search</span></a>
+        </div>
+        <div class="tooltips">
+            
+        </div>
+    </nav>
+    <div id="container">
+        <div class="subjectlist">
+            <ul id="ulsl">
+                <li class="list1 s-l subjectlistactive" id="listcn" onclick="ci('cn'), cl()"> CN</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('dsa'), cl()" id="listdsa">DSA</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('dld'), cl()" id="listdld">DLD</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('dwdm'), cl()" id="listdwdm">DWDM</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('spm'), cl()" id="listspm">SPM</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('devops'), cl()" id="listdevops">DevOps</li>
+                <hr class="subjectlistline">
+                <li class="list2 s-l" onclick="ci('others'), cl()" id="listothers">OTHERS</li>
+            </ul>
+            <hr class="subjectline">
+        </div>
+
+        <div id="unitimg">
+            <img id="unitimgchange" src="cn.jpg" alt="">
+        </div>
+
+        <div id="units">
+            <ul id="unitlist1">
+                <li onclick="u('u1'), unitlist()" id="unit1" class="u-l">UNIT-1</li>
+                <li onclick="u('u2'), unitlist()" id="unit2" class="u-l">UNIT-2</li>
+                <li onclick="u('u3'), unitlist()" id="unit3" class="u-l">UNIT-3</li>
+            </ul>
+        
+            <ul id="unitlist2">
+                <li onclick="u('u4'), unitlist()" id="unit4" class="u-l">UNIT-4</li>
+                <li onclick="u('u5'), unitlist()" id="unit5" class="u-l">UNIT-5</li>
+            </ul>
+            <hr id="unitslistline1">
+            <ul id="qpaper">
+               
+                <li onclick="u('u6'), unitlist()" id="midq" class="u-l">MID Q</li>
+                <li onclick="u('u7'), unitlist()" id="pqp" class="u-l">PREVIOUS Q PAPERS</li>
+               
+            </ul>
+            <hr id="unitslistline2">
+            <ul class="un3">
+                <li id="lm" onclick="u('lm'), unitlist()" class="u-l">LAB MANUAL</a></li>
+            </ul>
+        </div>
+        <div id="display">
+            <ul>
+                <li><a href="" target="_blank" id="pdf1">1.pdf</a></li>
+                <li><a href="" target="_blank" id="pdf2">2.pdf</a></li>
+            </ul>
+        </div>
+        <div id="others">
+            <div id="othersimg1">
+                <div id="oimg1">
+                    <a href=""><img src="dsa6.jpg" alt=""></a>
+                </div>
+                <h2 id="othersname1">DSA</h2>
+            </div>
+            
+            <div id="othersimg2">
+                <div id="oimg2">
+                    <a href=""><img src="dsa7.jpg" alt=""></a>
+                </div>
+                <h2 id="othersname2">APPTITUDE</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sls = document.getElementsByClassName('s-l');
+        var uls = document.getElementsByClassName('u-l');
+        function cl(){
+            for(sl of sls){
+                sl.classList.remove("subjectlistactive");
+            }
+            event.currentTarget.classList.add("subjectlistactive");
+        }
+        $(document).ready(function(){
+            $("#search").click(function(){
+                var l = $("#search").attr("name");
+                if(l == "true"){
+                    $("#inputbar").animate({left:'0vh'})
+                    $("#search").attr("name", "false");
+                }
+                else if(l == "false"){
+                    $("#inputbar").animate({left:'50vh'})
+                    $("#search").attr("name", "true");
+                }
+            });
+            $("#search").mouseover(function(){
+                $("#search").css("color", "red");
+                $("#search").click(function(){
+                    $("#search").css("color","white");
+                })
+            });
+            $("#search").mouseout(function(){
+                $("#search").css("color", "white");
+            });
+            $("#ulsl").click(function(){
+                // alert(window.innerWidth+", "+window.innerHeight);
+            })
+        });           
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+        body{
+    background-color: rgb(29, 27, 27);
+    color: white;
+    background-image: url('bg.jpg');
+    /* background-repeat: no-repeat; */
+}
+        .hover-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hover-nav li {
+  float: left;
+}
+
+.hover-nav li a {
+  position: relative;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 0;
+}
+
+a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #2683f6;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+a:hover::before,
+a:focus::before {
+  animation-name: sh;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes sh {
+    from{transform:scale(0);}
+    to{transform: scale(1);}
+    
+}
+
+
+
+
+
+#navicons{
+    border: 2px solid red;
+    margin-left: 140vh;
+    width: 35vh;
+    height: 10vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: large;
+    position: relative;
+    top: -8vh;
+    left: 27vh;
+}
+.naviconslist{
+    /* border: 2px solid red; */
+    /* position: relative;
+    margin-right: 4vh;
+    color: #fff;
+    cursor: pointer;
+    width: 4vh; */
+}
+.inputhide{
+    border: 2px solid red;
+    position: relative;
+    left: 117vh;
+    top: 1px;
+    height: 6vh;
+    width: 50.5vh;
+    overflow: hidden;
+}
+#inputbar{
+    /*border: 2px solid red;
+    */background-color: rgba(0, 0, 0, 0.4);
+    /*margin-left: 5vh;
+    */width: 49vh;
+    height: 35px;
+    border: none;
+    position: relative;
+    top: 2px;
+    left: .5vh;
+    outline: none;
+    padding: 11px;
+    border-radius: 20px 0px 0px 20px;
+    color: #fff;
+    -webkit-border-radius: 20px 0px 0px 20px;
+    -moz-border-radius: 20px 0px 0px 20px;
+    -ms-border-radius: 20px 0px 0px 20px;
+    -o-border-radius: 20px 0px 0px 20px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
+input:hover{
+    cursor: text;
+}
+#inputbar:focus{
+    background-color: transparent;
+    border: 2px solid white;
+    outline: 1px solid white;
+}
+#inputbar{
+    left: 0vh;
+    animation-name: search;
+    -webkit-animation-name: search;
+    animation-duration: 7s;
+}
+@keyframes search {
+    from{left:50vh;}
+    to{left:0;}    
+}

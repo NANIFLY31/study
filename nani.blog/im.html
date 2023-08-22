@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <script src="https://kit.fontawesome.com/9b3e996841.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(29, 27, 27);
+    color: white;
+    background-image: url('bg.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 11vh;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding-right: 5vh;
+}
+.logo{
+    padding: 0 5%;
+    display: inline;
+    float: left;
+    margin-top: 4vh;
+    font-size: 35px;
+    /* border: 2px solid red; */
+}
+.n{
+    color: #b61313;
+}
+#navicons{
+    /* border: 2px solid red; */
+    display: inline-flex;
+    float: right;
+    /* height: 5vh; */
+    margin-top:5vh;
+    font-size: large;
+    align-items: center;
+}
+.naviconslist{
+    display: flex;
+    /* border: 2px solid red; */
+    margin-right: 4vh;
+    color: #fff;
+    cursor: pointer;
+}
+.naviconslistt{
+    /* border: 2px solid red;  */
+    z-index: 1;
+    position: relative;
+    left: 43vh;
+}
+.inputhide{
+    display: flex;    
+    /* border: 2px solid red; */
+    height: 8vh;
+    width: 48vh;
+    overflow: hidden;
+    border-radius: 20px;
+    font-size: large;
+    align-items: center;
+    position: relative;
+
+    margin-right: 10px;
+}
+#inputbar{
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: transparent;
+    width: 58vh;
+    height: 35px;
+    border: none;
+    padding: 11px;
+    border-radius: 20px;
+    position: relative;
+    left: 46vh;
+    color: #fff;
+    border: 1px solid #fff;
+    z-index: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+input:hover{
+    cursor: text;
+}
+#inputbar:focus{
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: transparent; */
+    box-shadow: .2px .2px 5.9px 1px
+}
+/* @keyframes search {
+    from{left:50vh;box-shadow: .2px .2px 5.9px 1px #fff;background-color: transparent;}
+    to{left:0;box-shadow: .2px .2px 5.9px 1px #fff;}    
+} */
+.tooltipsearch{
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 10vh;
+    height: 4vh;
+    display: block;
+     visibility: hidden;
+    position: absolute;
+    top: 5vh;
+    left: -3.55vh;
+    padding: 3px 0;
+    border-radius: 6px;
+    /* opacity: 0; */
+    /* transition: opacity 1s; */
+}
+.tooltipsearch::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border: 5px solid;
+    border-color: transparent transparent black transparent;
+}
+#search:hover .tooltipsearch{
+    animation-name:search;
+    animation-duration: 2s;
+    animation-delay: .7s;
+    animation-fill-mode: backwards;
+    /* opacity: 1; */
+}
+@keyframes search {
+    from{visibility: hidden;}
+    to{visibility: visible;}  
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(29, 27, 27);
+    color: white;
+    background-image: url('bg.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* ---------------------------- subjects line --------------------- */
+
+    
+
+
+#container{
+    position: relative;
+    top: 15vh;
+    /* margin-top: 15vh; */
+    margin-left: 7vh;
+    margin-right: 7vh;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.3);
+    /* border: 2px solid red; */
+    height: 81vh;
+}
+.subjectlist{
+    /* border: 2px solid red; */
+    padding-top: 20px;
+}
+#ulsl{
+    display: flex;
+}
+.subjectlist ul li{
+    list-style-type: none;
+    padding: 10px 40px;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    /* transform: scale(1,1); */
+    /* border: 2px solid red; */
+}
+/* .subjectlist ul li:hover{
+    box-shadow: 1px 1px 10px 1px #fff;
+} */
+.subjectlistactive{
+    box-shadow: 1px 1px 10px 1px #fff;
+    color: #b61313;
+}
+.list1{
+    margin-left: 20px;
+}
+.list2{
+    /* margin-right: -33px; */
+
+}
+.subjectlistline{
+    /* position: fixed; */
+    height: 30px;   
+}
+.subjectline{
+    /* position: fixed; */
+    margin-left: 20px;
+    width: 63.3%;
+}
+
+li:active{
+    transform: scale(1.1, 1.1);
+    /* transition: 0.9s; */
+    /* transform: scaleY(1.1); */
+
+}
+
+
+
+
+/* ------------------------------  UNITS IMAGE -------------------------- */
+
+
+
+
+#unitimg{
+    /* display: none; */
+    margin-top: 10vh;
+    width: 35vh;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 50px;
+    /* border: 2px solid red; */
+}
+#unitimg img{
+    width: 35vh;
+    height: 45vh;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+    /* border: 2px solid red; */
+    transition:.5s ease-in-out;
+}
+#unitimg:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+/* --------------  UNITS LIST  ---------------- */
+
+
+
+
+#units{
+    /* border: 2px solid red; */
+    padding-top: 20px;
+    position: relative;
+    left: 55vh;
+    top: -47.5vh;
+    width: 60.5vh;
+}
+#units ul{
+     display: flex;
+     /* border: 2px solid red; */
+     width: 61vh;
+}
+#units ul li{
+    /* border: 2px solid red; */
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 2px; 
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+#units ul li:hover{
+    /* color: #b61313; */
+    /* box-shadow: 0px 0px 10px 1px #fff; */
+}
+#unitlist2{
+    margin-top: 25px;
+    margin-left: 10vh;
+    /* transition: 0.5s; */
+}
+#unitslistline1{
+    margin-top: 30px;
+    width: 60vh;
+}
+#unitslistline2{
+    margin-top: 30px;
+    width: 60vh;
+}
+#qpaper{
+    margin-top: 30px;
+}
+#lm{
+    margin-top: 30px;
+    margin-left: 15vh;
+    /* transition: 0.5s; */
+    font-size: large;
+    letter-spacing: 2px;
+    position: relative;
+}
+.unitlistactive{
+    box-shadow: 0px 0px 10px 1px #fff;
+}
+.u-l:active{
+    box-shadow: 0px 0px 10px 1px #fff; 
+}
+
+
+
+
+/* ----------------------- SIDE DISPLAY ----------------- */
+
+
+
+ #display{
+    width: 40vh;
+    height: 40vh;
+    background: rgba(0,0,0,0.0);
+    /* border: 3px solid red; */
+    margin-left: 150vh;
+    text-align: center;
+    position: absolute;
+    top: 20vh;
+}
+#display ul{
+    padding-top: 10vh;
+}
+#display ul li{
+    list-style-type: none;
+    height: 10vh;
+    /* border: 3px solid red; */
+}
+#display ul li a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: large;
+    font-style: oblique;
+    /* border: 3px solid red; */
+}
+#display{
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.4),
+    0 6px 20px 0 rgba(0,0,0,0.4);
+    /* box-shadow: 10px 0px 10px 0px #000; */
+    opacity: 0;
+}
+/* #display:hover{
+    box-shadow: 1px 1px 10px 2px #000,
+    1px 1px 10px 2px #000;
+} */
+
+
+/* --------------------  others ------------------ */
+
+
+#others{
+    /* display: flex; */
+    gap: 11vh;
+    position: relative;
+    top: -90.8vh;
+    width: 100vh;
+    /* border: 2px solid red; */
+    display: none;
+}
+#othersimg1,#othersimg2{
+    /* margin-top: 10vh; */
+    width: 35vh;
+    height: 50vh;
+    /* border-radius: 10px;
+    position: relative; */
+    overflow: hidden;
+    margin-left: 50px;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+#oimg1,#oimg2{
+    /* border: 2px solid red; */
+    width: 35vh;
+    height: 45vh;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+#othersimg1 img,#othersimg2 img{
+    width: 35vh;
+    height: 45vh;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+    /* border: 2px solid red; */
+    transition:.5s ease-in-out;
+}
+#othersimg1 img:hover, #othersimg2 img:hover{
+    transform: scale(1.15);
+}
+#othersimg2 img{
+    position: relative;
+    left: 0vh;
+    animation-name: apptitude;
+    animation-duration: 1.5s;
+}
+@keyframes apptitude {
+    from{left:35vh;}
+    to{left: 0vh;}
+}
+#othersimg1 img{
+    /* border: 2px solid red; */
+    position: relative;
+    left: 0vh;
+    animation-name: dsa;
+    animation-duration: 1.5s;
+}
+@keyframes dsa {
+    from{left:-35vh;}
+    to{left: 0vh;}  
+}
+/* #othersname1,#othersname2{
+    border: 2px solid red;
+    width: 40vh;
+    height: 20px;
+    position: relative;
+    top: 48vh;
+    margin-left: -30vh;
+} */
+#othersname1{
+    position: relative;
+    left: 0vh;
+    /* border: 2px solid red; */
+    animation-name: dsaname;
+    animation-duration: 2s;
+}
+@keyframes dsaname {
+    from{left:-35vh;}
+    to{left: 0vh;}
+}
+#othersname2{
+    position: relative;
+    left: 0vh;
+    /* border: 2px solid red; */
+    animation-name: apptitudename;
+    animation-duration: 2s;
+}
+@keyframes apptitudename {
+    from{left:35vh;}
+    to{left: 0vh;}
+}
+
+
+
+
+/* <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
+      <input type="text" placeholder="Search our tutorials, e.g. HTML" id="search2" class="ga-fp" autocomplete="off" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this)">
+      <button type="button" id="learntocode_searchbtn" onclick="click_learntocode_search_btn()"><i id="learntocode_searchicon" class="fa fa-search ga-fp"></i></button>
+      <div id="listofsearchresults">
+      </div>
+    </form> */
+
+@media only screen and (max-width:768px){
+    body{
+        color: #b61313;
+    }
+} 
+    </style>
+</head>
+<body>
+    <nav>
+        <h2 class="logo"><span class="n">N</span>T</h2>
+        <div id="navicons">
+            <div class="inputhide">
+                <a id="search" class="naviconslistt" name="true" onclick="searh()"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input type="search" id="inputbar" placeholder="search" spellcheck="false">
+            </div>
+            <a id="user" class="naviconslist"><i class="fa-solid fa-user"></i><span class="tooltipsearch">search</span></a>
+            <a id="user" class="naviconslist"><i class="fas fa-envelope"></i><span class="tooltipsearch">search</span></a>
+            <a id="user" class="naviconslist"><i class="far fa-hashtag"></i><span class="tooltipsearch">search</span></a>
+            <a id="user" class="naviconslist"><i class="far fa-circle-question"></i><span class="tooltipsearch">search</span></a>
+        </div>
+        <div class="tooltips">
+            
+        </div>
+    </nav>
+    <div id="container">
+        <div class="subjectlist">
+            <ul id="ulsl">
+                <li class="list1 s-l subjectlistactive" id="listcn" onclick="ci('cn'), cl()"> CN</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('dsa'), cl()" id="listdsa">DSA</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('dld'), cl()" id="listdld">DLD</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('dwdm'), cl()" id="listdwdm">DWDM</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('spm'), cl()" id="listspm">SPM</li>
+                <hr class="subjectlistline">
+                <li class="s-l" onclick="ci('devops'), cl()" id="listdevops">DevOps</li>
+                <hr class="subjectlistline">
+                <li class="list2 s-l" onclick="ci('others'), cl()" id="listothers">OTHERS</li>
+            </ul>
+            <hr class="subjectline">
+        </div>
+
+        <div id="unitimg">
+            <img id="unitimgchange" src="cn.jpg" alt="">
+        </div>
+
+        <div id="units">
+            <ul id="unitlist1">
+                <li onclick="u('u1'), unitlist()" id="unit1" class="u-l">UNIT-1</li>
+                <li onclick="u('u2'), unitlist()" id="unit2" class="u-l">UNIT-2</li>
+                <li onclick="u('u3'), unitlist()" id="unit3" class="u-l">UNIT-3</li>
+            </ul>
+        
+            <ul id="unitlist2">
+                <li onclick="u('u4'), unitlist()" id="unit4" class="u-l">UNIT-4</li>
+                <li onclick="u('u5'), unitlist()" id="unit5" class="u-l">UNIT-5</li>
+            </ul>
+            <hr id="unitslistline1">
+            <ul id="qpaper">
+               
+                <li onclick="u('u6'), unitlist()" id="midq" class="u-l">MID Q</li>
+                <li onclick="u('u7'), unitlist()" id="pqp" class="u-l">PREVIOUS Q PAPERS</li>
+               
+            </ul>
+            <hr id="unitslistline2">
+            <ul class="un3">
+                <li id="lm" onclick="u('lm'), unitlist()" class="u-l">LAB MANUAL</a></li>
+            </ul>
+        </div>
+        <div id="display">
+            <ul>
+                <li><a href="" target="_blank" id="pdf1">1.pdf</a></li>
+                <li><a href="" target="_blank" id="pdf2">2.pdf</a></li>
+            </ul>
+        </div>
+        <div id="others">
+            <div id="othersimg1">
+                <div id="oimg1">
+                    <a href=""><img src="dsa6.jpg" alt=""></a>
+                </div>
+                <h2 id="othersname1">DSA</h2>
+            </div>
+            
+            <div id="othersimg2">
+                <div id="oimg2">
+                    <a href=""><img src="dsa7.jpg" alt=""></a>
+                </div>
+                <h2 id="othersname2">APPTITUDE</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        var subject = "cn";
+function ci(s){
+    // $.subjectsh(s);
+
+    var unitimg = document.getElementById('unitimg');
+    var unitimgchange = document.getElementById('unitimgchange');
+    var unitlist1 = document.getElementById('unitlist1');
+    var unitlist2 = document.getElementById('unitlist2');
+    var unitlistline1 = document.getElementById('unitlistline1');
+    var qpaper = document.getElementById('qpaper');
+    var unitlistline2 = document.getElementById('unitlistline2');
+    var lm = document.getElementById('lm');
+    var display = document.getElementById('display');
+    var others = document.getElementById('others');
+    var othersimg1 = document.getElementById('othersimg1');
+    var othersimg2 = document.getElementById('othersimg2');
+    var oimg1 = document.getElementById('oimg1');
+    var oimg2 = document.getElementById('oimg2');
+    var othersname1 = document.getElementById('othersname1');
+    var othersname2 = document.getElementById('othersname2');
+    let ids = ["cn", "dsa", "dld", "dwdm", "spm", "devops", "others"];
+    if(s == ids[0]){    
+
+        unitimg.style.opacity = '1';
+        unitimg.style.transition = '0.1s';
+        unitimgchange.src = "cn.jpg";
+
+        unitlist1.style.opacity = '1';
+        unitlist1.style.transition = '0.5s';
+        unitlist2.style.opacity = '1';
+        unitlist2.style.transition = '0.5s';
+
+        unitslistline1.style.opacity = '1';
+        unitslistline1.style.transition = '0.5s';
+        
+        qpaper.style.opacity = '1';
+        qpaper.style.transition = '0.5s';
+        
+        unitslistline2.style.opacity = 1;
+        unitslistline2.style.transition = '0.3s';
+        
+        lm.style.top = '0';
+        lm.style.opacity = '1';
+        lm.style.transition = '0.4s';
+        
+
+        units.style.top = '-47.5vh';
+        units.style.transition = '0.5s';
+        
+        subject =s;
+        display.innerHTML = "<ul><li><a href= '1.pdf' target='_blank' id='pdf1'>cn unit-1.pdf</a></li></ul>";
+        display.style.opacity = "1";
+        display.style.transition = '0.7s';
+
+        oimg1.style.opacity = '0';
+        oimg1.style.transition = '0.5s';
+
+        oimg2.style.opacity = '0';
+        oimg2.style.transition = '0.5s';
+
+        othersname1.style.opacity = '0';
+        othersname1.style.transition = '0.5s';
+
+        othersname2.style.opacity = '0';
+        othersname2.style.transition = '0.5s';
+        // document.getElementsById('unit2.classList.remove("unitslistactive");
+        
+        }
+    else if(s == ids[1]){
+        unitimg.style.opacity = '1';
+        unitimg.style.transition = '0.4s';
+
+        unitimgchange.src = "dsa.jpg";
+
+        unitlist1.style.opacity = '1';
+        unitlist1.style.transition = '0.5s';
+        unitslistline1.style.opacity = '1';
+        unitslistline1.style.transition = '0.5s';
+        qpaper.style.opacity = '1';
+        qpaper.style.transition = '0.5s';
+
+        unitlist2.style.opacity = '1';
+        unitlist2.style.transition = '0.5s';
+        unitslistline2.style.opacity = '0';
+        unitslistline2.style.transition = '0.5s';
+
+        lm.style.opacity = '0';
+        lm.style.transition = '0.4s';
+        units.style.top = '-40vh';
+        units.style.transition = '0.5s';
+        subject = s;
+        display.style.opacity = "1";
+        display.style.transition = '0.5s';
+        display.innerHTML = "<ul><li><a href= '1.pdf' target='_blank' id='pdf1'>dsa unit-1.pdf</a></li></ul>";
+
+        oimg1.style.opacity = '0';
+        oimg1.style.transition = '0.5s';
+
+        oimg2.style.opacity = '0';
+        oimg2.style.transition = '0.5s';
+
+        othersname1.style.opacity = '0';
+        othersname1.style.transition = '0.5s';
+
+        othersname2.style.opacity = '0';
+        othersname2.style.transition = '0.5s';
+    }
+    else if(s == ids[2]){
+        unitimg.style.opacity = '1';
+        unitimg.style.transition = '0.5s';
+
+        unitimgchange.src = "dld.jpg";
+        // .style.marginTop = '0vh';
+
+        unitlist1.style.opacity = '1';
+        unitlist1.style.transition = '0.5s';
+        unitslistline1.style.opacity = '1';
+        unitslistline1.style.transition = '0.5s';
+        qpaper.style.opacity = '1';
+        qpaper.style.transition = '0.5s';
+
+        unitlist2.style.opacity = '1';
+        unitlist2.style.transition = '0.5s';
+        unitslistline2.style.opacity = '0';
+        unitslistline2.style.transition = '0.5s';
+
+        lm.style.opacity = '0';
+        lm.style.transition = '0.3s';
+        units.style.top = '-40vh';
+        units.style.transition = '0.5s';
+        subject = s;
+        display.style.opacity = "1";
+        display.style.transition = '0.5s';
+        display.innerHTML = "<ul><li><a href= '1.pdf' target='_blank' id='pdf1'>dld unit-1.pdf</a></li></ul>";
+
+        oimg1.style.opacity = '0';
+        oimg1.style.transition = '0.5s';
+
+        oimg2.style.opacity = '0';
+        oimg2.style.transition = '0.5s';
+
+        othersname1.style.opacity = '0';
+        othersname1.style.transition = '0.5s';
+
+        othersname2.style.opacity = '0';
+        othersname2.style.transition = '0.5s';
+    }
+    else if(s == ids[3]){
+        unitimg.style.opacity = '1';
+        unitimg.style.transition = '0.5';
+
+        unitimgchange.src = "dwdm.jpg";
+        lm.style.top = '0';
+
+        unitlist1.style.opacity = '1';
+        unitlist1.style.transition = '0.5';
+        unitslistline1.style.opacity = '1';
+        unitslistline1.style.transition = '0.5s';
+        qpaper.style.opacity = '1';
+        qpaper.style.transition = '0.5s';
+
+        unitlist2.style.opacity = '1';
+        unitlist2.style.transition = '0.5s';
+        unitslistline2.style.opacity = '1';
+        unitslistline2.style.transition = '0.5s';
+
+        lm.style.opacity = '1';
+        lm.style.transition = '0.5s';
+        units.style.top = '-47.5vh';
+        units.style.transition = '0.5s';
+
+        subject = s;
+        display.style.opacity = "1";
+        display.style.transition = '0.5s';
+        display.innerHTML = "<ul><li><a href= '1.pdf' target='_blank' id='pdf1'>dwdm unit-1.pdf</a></li></ul>";
+
+        oimg1.style.opacity = '0';
+        oimg1.style.transition = '0.5s';
+
+        oimg2.style.opacity = '0';
+        oimg2.style.transition = '0.5s';
+
+        othersname1.style.opacity = '0';
+        othersname1.style.transition = '0.5s';
+
+        othersname2.style.opacity = '0';
+        othersname2.style.transition = '0.5s';
+    }
+    else if(s == ids[4]){
+        unitimg.style.opacity = '1';
+        unitimg.style.transition = '0.5';
+
+        unitimgchange.src = "spm.jpg";
+        // units.style.marginTop = '0vh';
+
+        unitlist1.style.opacity = '1';
+        unitlist1.style.transition = '0.5';
+        unitslistline1.style.opacity = '1';
+        unitslistline1.style.transition = '0.5';
+        qpaper.style.opacity = '1';
+        qpaper.style.transition = '0.5';
+
+        unitlist2.style.opacity = '1';
+        unitlist2.style.transition = '0.5';
+        unitslistline2.style.opacity = '0';
+        unitslistline2.style.transition = '0.5';
+
+        lm.style.opacity = '0';
+        lm.style.transition = '0.5s';
+        units.style.top = '-40vh';
+        units.style.transition = '0.5s';
+        subject = s;
+        display.style.opacity = "1";
+        display.style.transition = '0.5s';
+        display.innerHTML = "<ul><li><a href= '1.pdf' target='_blank' id='pdf1'>spm unit-1.pdf</a></li></ul>";
+
+        oimg1.style.opacity = '0';
+        oimg1.style.transition = '0.5s';
+
+        oimg2.style.opacity = '0';
+        oimg2.style.transition = '0.5s';
+
+        othersname1.style.opacity = '0';
+        othersname1.style.transition = '0.5s';
+
+        othersname2.style.opacity = '0';
+        othersname2.style.transition = '0.5s';
+    }
+    else if(s==ids[5]){
+        unitimg.style.opacity = '1';
+        unitimg.style.transition = '0.5';
+
+        unitimgchange.src = "devops.jpg";
+
+        unitlist1.style.opacity = '0';
+        unitlist1.style.transition = '0.5';
+
+        unitslistline1.style.opacity = '0';
+        unitslistline1.style.transition = '0.5';
+
+        unitlist2.style.opacity = '0';
+        unitlist2.style.transition = '0.5';
+
+        unitslistline2.style.opacity = '0';
+        unitslistline2.style.transition = '0.5';
+
+        qpaper.style.opacity = '0';
+        qpaper.style.transition = '0.5';
+
+        lm.style.opacity = '1';
+        lm.style.transition = '0.5s';
+        lm.style.top = '-23vh';
+        
+        // units.style.top = '-67vh';
+        units.style.transition = '0.5s';
+        subject = s;
+        display.style.opacity = "1";
+        display.style.transition = '0.5s';
+        display.innerHTML = "<ul><li><a href= '1.pdf' target='_blank' id='pdf1'>Lab Manual</a></li></ul>";
+
+        oimg1.style.opacity = '0';
+        oimg1.style.transition = '0.4s';
+
+        oimg2.style.opacity = '0';
+        oimg2.style.transition = '0.4s';
+
+        othersname1.style.opacity = '0';
+        othersname1.style.transition = '0.4s';
+
+        othersname2.style.opacity = '0';
+        othersname2.style.transition = '0.4s';
+    }
+    else if(s==ids[6]){
+        unitlist1.style.opacity = '0';
+        unitlist1.style.transition = '0.5';
+
+        unitslistline1.style.opacity = '0';
+        unitslistline1.style.transition = '0.5';
+
+        unitlist2.style.opacity = '0';
+        unitlist2.style.transition = '0.5';
+
+        unitslistline2.style.opacity = '0';
+        unitslistline2.style.transition = '0.5';
+
+        qpaper.style.opacity = '0';
+        qpaper.style.transition = '0.5';
+
+        lm.style.opacity = '0';
+        lm.style.marginTop = '5vh';
+        lm.style.transition = '0.35s';
+
+        unitimg.style.opacity = '0';
+        // unitimg.style.transition = '8.5';
+        display.style.opacity = '0';
+        display.style.transition = '0.5';
+
+        others.style.display = 'flex';
+        oimg1.style.opacity = '1';
+        oimg1.style.transition = '0.5s';
+
+        oimg2.style.opacity = '1';
+        oimg2.style.transition = '0.5s';
+
+        othersname1.style.opacity = '1';
+        othersname1.style.transition = '0.5s';
+
+        othersname2.style.opacity = '1';
+        othersname2.style.transition = '0.5s';
+
+
+    }
+}
+var cn = ['dld/1/DLD Mid-1 Question Bank.pdf', "cn/1/2.pdf", "cn/2/1.pdf", "cn/2/2.pdf", "cn/3/1.pdf", "cn/3/2.pdf", "cn/4/1.pdf", "cn/4/2.pdf", "cn/5/1.pdf", "cn/5/2.pdf", "cn/CN Mid-1 Question Bank.pdf", "cn/CN Mid-2 Question Bank.pdf", "cn/cn r20.pdf", "cn/lab-manual.pdf"];
+var dsa = ["dsa/1/1.pdf", "dsa/1/2.pdf", "dsa/2/1.pdf", "dsa/2/2.pdf", "dsa/3/1.pdf", "dsa/3/2.pdf", "dsa/4/1.pdf", "dsa/4/2.pdf", "dsa/5/1.pdf", "dsa/5/2.pdf", "dsa/DSA Mid-1 Question Bank.pdf", "dsa/DSA Mid-2 Question Bank.pdf", "dsa/dsa r20.pdf"];
+var dld = ["dld/1/1.pdf", "dld/1/2.pdf", "dld/2/1.pdf", "dld/2/2.pdf", "dld/3/1.pdf", "dld/3/2.pdf", "dld/4/1.pdf", "dld/4/2.pdf", "dld/5/1.pdf", "dld/5/2.pdf", 'dld/DLD Mid-1 Question Bank.pdf', "dld/DLD Mid-2 Question Bank.pdf", "dld/dld r20.pdf"];
+var dwdm = ["dwdm/1/1.pdf", "dwdm/1/2.pdf", "dwdm/2/1.pdf", "dwdm/2/2.pdf", "dwdm/3/1.pdf", "dwdm/3/2.pdf", "dwdm/4/1.pdf", "dwdm/4/2.pdf", "dwdm/5/1.pdf", "dwdm/5/2.pdf", "dwdm/DWDM Mid-1 Question Bank.pdf", "dwdm/DWDM Mid-2 Question Bank.pdf", "dwdm/dwdm r20.pdf", "dwdm/lab-manual.pdf"];
+var spm = ["spm/1/1.pdf", "spm/1/2.pdf", "spm/2/1.pdf", "spm/2/2.pdf", "spm/3/1.pdf", "spm/3/2.pdf", "spm/4/1.pdf", "spm/4/2.pdf", "spm/5/1.pdf", "spm/5/2.pdf", "spm/SPM Mid-1 Question Bank.pdf", "spm/SPM Mid-2 Question Bank.pdf", "spm/spm r20.pdf"];
+var devops = "devops/lab manual.pdf";
+var dd = "dld/DLD Mid-1 Question Bank.pdf";
+function u(u){
+    var display = document.getElementById('display');
+    var unit1 = document.getElementById('unit1').style;
+    var unit2 = document.getElementById('unit2');
+    var unit3 = document.getElementById('unit3');
+    var unit4 = document.getElementById('unit4');
+    var unit5 = document.getElementById('unit5');
+    var midq = document.getElementById('midq');
+    var pqp = document.getElementById('pqp');
+    var lm = document.getElementById('lm');
+    if(subject == "cn"){
+        if(u == 'u1'){
+            display.innerHTML = "<ul><li><a href= "+ cn[0] +" target='_blank' id='pdf1'>cn unit-1.pdf</a></li></ul>";
+            display.style.opacity = "1";
+            display.style.transition = '0.5s'; 
+            // unit1.boxShadow = "1px 1px 10px 1px #fff";
+            // unit2.removeProperty("box-shadow");
+            // unit3.removeProperty("box-shadow");
+            // unit4.removeProperty("box-shadow");
+            // unit5.removeProperty("box-shadow");
+            // midq.removeProperty("box-shadow");
+            // pqp.removeProperty("box-shadow");
+            // lm.removeProperty("box-shadow");
+
+        }
+        else if(u=='u2'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + cn[2] + " target='_blank' id='pdf1'>cn unit-2.pdf</a></li></ul>";
+            // unit1.removeProperty("box-shadow");
+
+        }
+        else if(u=='u3'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= "+ cn[4] +" target='_blank' id='pdf1'>cn unit-3.pdf</a></li></ul>";
+        }
+        else if(u=='u4'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= '' target='_blank' id='pdf1'>cn unit-4.pdf</a></li></ul>";
+        }
+        else if(u=='u5'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= "+ cn[8] +" target='_blank' id='pdf1'>cn unit-5.pdf</a></li></ul>";
+        }
+        else if(u=='u6'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= "+ cn[10] +" target='_blank' id='pdf1'>Mid-1</a></li><li><a href= "+ cn[11] +" target='_blank' id='pdf1'>Mid-2</a></li></ul>";
+        }
+        else if(u=='u7'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= "+ cn[12] +" target='_blank' id='pdf1'>Q Papers</a></li>";
+        }
+        else if(u=='lm'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= "+ cn[13] +" target='_blank' id='pdf1'>Lab Manual</a></li></ul>";
+        }
+    }
+    else if(subject == "dsa"){
+        if(u == 'u1'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dsa[0] + " target='_blank' id='pdf1'>dsa unit-1.pdf</a></li></ul>";           
+        }
+        else if(u=='u2'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dsa[2] + " target='_blank' id='pdf1'>dsa unit-2.pdf</a></li></ul>";
+        }
+        else if(u=='u3'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dsa[4] + " target='_blank' id='pdf1'>dsa unit-3.pdf</a></li></ul>";
+        }
+        else if(u=='u4'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dsa[6] + " target='_blank' id='pdf1'>dsa unit-4.pdf</a></li></ul>";
+        }
+        else if(u=='u5'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dsa[8] + " target='_blank' id='pdf1'>dsa unit-5.pdf</a></li></ul>";
+        }
+        else if(u=='u6'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= "+ dsa[10] +" target='_blank' id='pdf1'>Mid-1</a></li><li><a href= "+ dsa[11] +" target='_blank' id='pdf2'>Mid-2</a></li></ul>"; 
+        }
+        else if(u=='u7'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= "+ dsa[12] +" target='_blank' id='pdf1'>Q Papers</a></li>";
+        }
+    }
+    else if(subject == "dld"){
+        if(u == 'u1'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dld[0] + " target='_blank' id='pdf1'>dld unit-1.pdf</a></li></ul>"; 
+        }
+        else if(u=='u2'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dld[2] + " target='_blank' id='pdf1'>dld unit-2.pdf</a></li></ul>";
+        }
+        else if(u=='u3'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dld[4] + " target='_blank' id='pdf1'>dld unit-3.pdf</a></li></ul>"; 
+        }
+        else if(u=='u4'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dld[6] + " target='_blank' id='pdf1'>dld unit-4.pdf</a></li></ul>";
+        }
+        else if(u=='u5'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dld[8] + " target='_blank' id='pdf1'>dld unit-5.pdf</a></li></ul>";
+        }
+        else if(u=='u6'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= 'dld/DLD Mid-1 Question Bank.pdf' target='_blank' id='pdf1'>Mid-1</a></li><li><a href= " + dd + " target='_blank' id='pdf2'>Mid-2</a></li></ul>"; 
+        }
+        else if(u=='u7'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= " + dld[12] + " target='_blank' id='pdf1'>Q Papers</a></li>";
+        }
+    }
+    else if(subject == "dwdm"){
+        if(u == 'u1'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= " + dwdm[0] + " target='_blank' id='pdf1'>dwdm unit-1.pdf</a></li></ul>"; 
+        }
+        else if(u=='u2'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dwdm[2] + " target='_blank' id='pdf1'>dwdm unit-2.pdf</a></li></ul>"; 
+        }
+        else if(u=='u3'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dwdm[4] + " target='_blank' id='pdf1'>dwdm unit-3.pdf</a></li></ul>"; 
+        }
+        else if(u=='u4'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dwdm[6] + " target='_blank' id='pdf1'>dwdm unit-4.pdf</a></li></ul>"; 
+        }
+        else if(u=='u5'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + dwdm[8] + " target='_blank' id='pdf1'>dwdm unit-5.pdf</a></li></ul>";
+        }
+        else if(u=='u6'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= " + dwdm[10] + " target='_blank' id='pdf1'>Mid-1</a></li><li><a href= " + dwdm[11] + " target='_blank' id='pdf2'>Mid-2</a></li></ul>";
+        }
+        else if(u=='u7'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= " + dwdm[12] + " target='_blank' id='pdf1'>Q Papers</a></li>";
+        }
+        else if(u=='lm'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= " + dwdm[13] + " target='_blank' id='pdf1'>Lab Manual</a></li></ul>";
+        }
+    }
+    else if(subject == "spm"){
+        if(u == 'u1'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + spm[0] + " target='_blank' id='pdf1'>spm unit-1.pdf</a></li></ul>";  
+        }
+        else if(u=='u2'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + spm[2] + " target='_blank' id='pdf1'>spm unit-2.pdf</a></li></ul>";
+        }
+        else if(u=='u3'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + spm[4] + " target='_blank' id='pdf1'>spm unit-3.pdf</a></li></ul>"; 
+        }
+        else if(u=='u4'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + spm[6] + " target='_blank' id='pdf1'>spm unit-4.pdf</a></li></ul>";
+        }
+        else if(u=='u5'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + spm[8] + " target='_blank' id='pdf1'>spm unit-5.pdf</a></li></ul>";
+        }
+        else if(u=='u6'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + spm[10] + " target='_blank' id='pdf1'>Mid-1</a></li><li><a href= " + spm[11] + " target='_blank' id='pdf2'>Mid-2</a></li></ul>";
+        }
+        else if(u=='u7'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href=" + spm[12] + " target='_blank' id='pdf1'>Q Papers</a></li>"; 
+        }
+    }
+    else if(subject == "devops"){
+        if(u == 'lm'){
+            display.style.opacity = "1";
+            display.style.transition = '0.5s';
+            display.innerHTML = "<ul><li><a href= " + devops + " target='_blank' id='pdf1'>Lab Manual</a></li>";
+              
+        }
+    }
+}
+        var sls = document.getElementsByClassName('s-l');
+        var uls = document.getElementsByClassName('u-l');
+        function cl(){
+            for(sl of sls){
+                sl.classList.remove("subjectlistactive");
+            }
+            event.currentTarget.classList.add("subjectlistactive");
+        }
+        $(document).ready(function(){
+            $("#search").click(function(){
+                var l = $("#search").attr("name");
+                if(l == "true"){
+                    $("#inputbar").animate({left:'0vh'})
+                    $("#search").attr("name", "false");
+                }
+                else if(l == "false"){
+                    $("#inputbar").animate({left:'50vh'})
+                    $("#search").attr("name", "true");
+                }
+            });
+            $("#search").mouseover(function(){
+                $("#search").css("color", "red");
+                $("#search").click(function(){
+                    $("#search").css("color","white");
+                })
+            });
+            $("#search").mouseout(function(){
+                $("#search").css("color", "white");
+            });
+            $("#ulsl").click(function(){
+                // alert(window.innerWidth+", "+window.innerHeight);
+            })
+        });           
+    </script>
+</body>
+</html>
