@@ -203,11 +203,11 @@ li:active{
     height: 40vh;
     background: rgba(0,0,0,0.0);
     /* border: 3px solid red; */
-   /* margin-left: 150vh; */
+    /* margin-left: 150vh; */
     text-align: center;
     position: fixed;
-    left: 155vh;
     top: 35vh;
+    left: 155vh;
 }
 #display ul{
     padding-top: 10vh;
