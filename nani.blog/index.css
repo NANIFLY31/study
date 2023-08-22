@@ -6,7 +6,7 @@
 body{
     background-color: rgb(29, 27, 27);
     color: white;
-    background-image: url('bg.jpg');
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/615/294/495/artwork-deer-antlers-forest-wallpaper-3990080df11a5d7b7687880f2011c67d.jpg');
     /* background-attachment: scroll; */
     background-size: cover;
 
@@ -182,6 +182,7 @@ li:active{
     /* transition: 0.5s; */
     font-size: large;
     letter-spacing: 2px;
+    position: relative;
 }
 .unitlistactive{
     box-shadow: 0px 0px 10px 1px #fff;
@@ -203,12 +204,16 @@ li:active{
     background: rgba(0,0,0,0.0);
     /* border: 3px solid red; */
     /* margin-left: 150vh; */
-    text-align: center;
-    position: relative;
-    top: 10vh;
-    left: 90vh;
+    position: fixed;
+    top: 35vh;
+    left: 150vh;
 }
 #display ul{
+    /* border: 3px solid red; */
+    display: block;
+    text-align: center;
+    width: 40vh;
+    height: 40vh;
     padding-top: 10vh;
 }
 #display ul li{
@@ -226,7 +231,7 @@ li:active{
 }
 #display{
     box-shadow:0px 8px 16px 0px rgba(0,0,0,0.4),
-    0 6px 20px 0 rgba(0,0,0,0.4);
+    0 6px 20px 0 rgba(0,0,0,0.4); 
     /* box-shadow: 10px 0px 10px 0px #000; */
     opacity: 0;
 }
@@ -243,7 +248,7 @@ li:active{
     /* display: flex; */
     gap: 11vh;
     position: relative;
-    top: -90.8vh;
+    top: -91.8vh;
     width: 100vh;
     /* border: 2px solid red; */
     display: none;
